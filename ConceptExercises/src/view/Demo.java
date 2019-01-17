@@ -3,18 +3,19 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Collections;
-
-import view.Demo;
+package view;
+import view.*;
 
 /**
  *
  * @author jamesK
  */
-public class TreeDemo extends Demo {
-    
-    public TreeDemo(String demotype) {
-        super(demotype);
+public class Demo {
+    private String demotype;
+
+    public Demo(String demotype) {
+        this.demotype = demotype;
+        Welcome welcome = new Welcome(demotype);
+        
     }
-    
 }
